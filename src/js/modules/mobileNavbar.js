@@ -8,13 +8,25 @@ export const mobileBtn = menuBtn.addEventListener('click', function() {
 });
 
 const menuLinks = document.querySelectorAll('.menu-link[data-goto]');
-
-console.log(menuLinks)
+const logoLinks = document.querySelectorAll('.logo-link[data-goto]');
+const btnLinks = document.querySelectorAll('.btn-link[data-goto]');
 
 if(menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener('click', onMenuLinkClick);
 	});
+
+	if(logoLinks.length > 0) {
+		logoLinks.forEach(menuLink => {
+			menuLink.addEventListener('click', onMenuLinkClick);
+		});
+	}
+
+	if(btnLinks.length > 0) {
+		btnLinks.forEach(menuLink => {
+			menuLink.addEventListener('click', onMenuLinkClick);
+		});
+	}
 
 	function onMenuLinkClick(event) {
 		const menuLink = event.target;
