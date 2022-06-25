@@ -1,0 +1,109 @@
+.top-banner {
+    height: 300px;
+    .crisper {
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title {
+            margin-bottom: 50px;
+            color: $c-white;
+            font-size: 18px;
+            line-height: calc(60 / 59 * 100%);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .btn-banner {
+            .sing-up-link {
+                margin-right: 10px;
+                border: 1px solid $c-logo;
+                background-color: $c-logo;
+                color: $c-black;
+                font-size: 14px;
+                line-height: $lh-btn;
+                letter-spacing: $ls-btn;
+                text-transform: uppercase;
+                border-radius: 4px;
+                padding: 5px 10px;
+                &:hover {
+                    border: 1px solid $c-white;
+                    background-color: transparent;
+                }
+            }
+            .learn-more-link {
+                border: 1px solid $c-white;
+                background-color: transparent;
+                color: $c-white;
+                font-size: 14px;
+                line-height: $lh-btn;
+                letter-spacing: $ls-btn;
+                text-transform: uppercase;
+                border-radius: 4px;
+                padding: 5px 10px;
+                &:hover {
+                    border: 1px solid $c-logo;
+                    background-color: $c-logo;
+                }
+            }
+        }
+    }
+}
+/* sm-размер (>=576px) */
+@media (min-width: 576px) {
+    /* CSS для ширины от 576px до 767px */
+    .top-banner {
+        .crisper {
+            .title {
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+/* md-размер (>=768px) */
+@media (min-width: 768px) {
+    /* CSS для ширины от 768px до 991px */
+    .top-banner {
+        height: 400px;
+        .crisper {
+            .title {
+                margin-bottom: 90px;
+                font-size: 59px;
+            }
+            .btn-banner {
+                .sing-up-link {
+                    margin-right: 20px;
+                    font-size: $fz-btn;
+                    padding: 13px 30px;
+                }
+                .learn-more-link {
+                    font-size: $fz-btn;
+                    padding: 13px 30px;
+                }
+            }
+        }
+    }
+}
+/* lg-размер (>=992px) */
+@media (min-width: 992px) {
+    /* CSS для ширины от 992px до 1199px */
+    .top-banner {
+        height: 500px;
+        .crisper {
+            padding-left: 0;
+            padding-right: 0;
+            .title {
+                margin-bottom: 106px;
+            }
+        }
+    }
+}
+/* xl-размер (>=1200px) */
+@media (min-width: 1200px) {
+    /* CSS для ширины от 1200px до 1399px */
+    .top-banner {
+        height: 594px;
+    }
+}

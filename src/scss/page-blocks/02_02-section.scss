@@ -1,0 +1,98 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, .1);
+    .crisper {
+        .section-title {
+            max-width: 188px;
+            text-align: center;
+            padding-bottom: 17px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #7A7A7A;
+            margin-left: auto;
+            margin-right: auto;
+            h2 {
+                font-size: 25px;
+                line-height: calc(30 / 25 * 100%);
+                color: #2E2E2E;
+            }
+        }
+        .subtitle {
+            margin-bottom: 20px;
+            text-align: center;
+            p {
+                font-size: 18px;
+                line-height: calc(24 / 18 * 100%);
+                color: #7A7A7A;
+            }
+        }
+        .section-body {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            .card {
+                margin: 0 auto;
+                padding: 15px;
+                background-color: $color-white;
+                border-radius: 4px;
+                box-shadow: 0 0 10px 2px rgba(0, 0, 0, .4);
+                .card-header {
+                    margin-bottom: 10px;
+                    .img-card {
+                        width: 100%;
+                        max-height: 300px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .card-body {
+                    text-align: center;
+                    .fname {
+                        font-size: 16px;
+                        line-height: calc(21 / 16 * 100%);
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* sm-размер (>=576px) */
+@media (min-width: 576px) {
+    /* CSS для ширины от 576px до 767px */
+    .about {
+        .crisper {
+            .section-body {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+/* md-размер (>=768px) */
+@media (min-width: 768px) {
+    /* CSS для ширины от 768px до 991px */
+    .about {
+        .crisper {
+            .section-body {
+                .card {
+                    width: 100%;
+                    .card-header {
+                        .img-card {
+                            max-height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* lg-размер (>=992px) */
+@media (min-width: 992px) {
+    /* CSS для ширины от 992px до 1199px */
+    .about {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

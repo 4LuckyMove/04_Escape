@@ -1,0 +1,201 @@
+.modals {
+    .crisper {
+        .modal {
+            opacity: 0;
+            visibility: hidden;
+            overflow: auto;
+            height: auto;
+            max-height: 100%;
+            width: 100%;
+            max-width: 500px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 30;
+            box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+            padding: 20px 10px;
+            border-radius: 4px;
+            background-color: $c-white;
+            transition: 0.3s all;
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+            .modal-title {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .modal__cross {
+                    width: 15px;
+                    height: 15px;
+                    fill: $c-headind;
+                    cursor: pointer;
+                }
+                .modal__title {
+                    color: $c-logo;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    // font-size: $fz-title;
+                    line-height: $lh-title;
+                    letter-spacing: 2px;
+                    // letter-spacing: $ls-title;
+                }
+            }
+            .sub-title {
+                margin-bottom: 20px;
+            }
+        }
+        .modal-1 {
+            .modal-body {
+                input[type=text], input[type=password] {
+                    width: 100%;
+                    padding: 12px;
+                    margin: 5px 0 22px 0;
+                    display: inline-block;
+                    border: none;
+                    background: $c-footer-border;
+                    border-radius: 4px;
+                    &:focus {
+                        background-color: $c-content-border;
+                        outline: none;
+                    }
+                }
+                button {
+                    background-color: $c-logo;
+                    border: 1px solid $c-logo;
+                    color: $c-white;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%;
+                    opacity: 0.9;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    // font-size: $fz-btn;
+                    line-height: $lh-btn;
+                    letter-spacing: $ls-btn;
+                    &:hover {
+                        opacity:1;
+                    }
+                }
+                .loginbtn {
+                    padding: 12px 20px;
+                    background-color: #04AA6D;
+                    border: 1px solid #04AA6D;
+                }
+                .loginbtn, .signupbtn {
+                    float: left;
+                    // width: 50%;
+                }
+                .clearfix::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                .check-remember {
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    input {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .modal-2 {
+            .modal-body {
+                label {
+                    color: $c-headind;
+                    font-weight: bold;
+                }
+                input[type=text], select, textarea {
+                    width: 100%;
+                    padding: 12px;
+                    margin: 5px 0 22px 0;
+                    display: inline-block;
+                    border: none;
+                    background: $c-footer-border;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    resize: vertical;
+                    color: $c-sub-heading;
+                    &:focus {
+                        background-color: $c-content-border;
+                        outline: none;
+                    }
+                }
+                input[type=submit] {
+                    width: 100%;
+                    margin: 0 auto;
+                    background-color: #04AA6D;
+                    border: 1px solid #04AA6D;
+                    color: $c-white;
+                    padding: 12px 20px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    // font-size: $fz-btn;
+                    line-height: $lh-btn;
+                    letter-spacing: $ls-btn;
+                    opacity: 0.9;
+                    &:hover {
+                        opacity:1;
+                    }
+                }
+            }
+        }
+        .overlay {
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 20;
+            transition: .3s all;
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+/* sm-размер (>=576px) */
+@media (min-width: 576px) {
+    /* CSS для ширины от 576px до 767px */
+    .modals {
+        .crisper {
+            .modal-1 {
+                .modal-body {
+                    button {
+                        height: 45px;
+                    }
+                    .loginbtn, .signupbtn {
+                        width: 50%;
+                    }
+                    .loginbtn {
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .signupbtn {
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                    .clearfix-login {
+                        .loginbtn {
+                            border-radius: 0px 4px 4px 0px;
+                        }
+                        .signupbtn {
+                            border-radius: 4px 0px 0px 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

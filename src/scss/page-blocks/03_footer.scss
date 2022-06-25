@@ -1,0 +1,175 @@
+.body-contact-and-footer {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    .contact {
+        padding-top: 62px;
+        padding-bottom: 90px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        z-index: 2;
+        .crisper {
+            text-align: center;
+            .body-title {
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 188px;
+                padding-bottom: 17px;
+                border-bottom: 1px solid #4D565D;
+                .title {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: $color-white;
+                }
+            }
+            .input-group {
+                margin: 0 auto;
+                max-width: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #email-footer {
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    border: 0;
+                    border-radius: 3px 0 0 3px;
+                    color: #817F83;
+                    &::placeholder {
+                        color: #817F83;
+                        font-family: $ff-other-content;
+                        font-size: 12px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                #btn-email-footer {
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    cursor: pointer;
+                    border: 0;
+                    border-radius: 0 3px 3px 0;
+                    color: #F8F8F8;
+                    font-family: $ff-other-content;
+                    font-size: 12px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+    .footer {
+        background-color: rgba(0, 0, 0, .6);
+        padding-top: 28px;
+        padding-bottom: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        z-index: 2;
+        .crisper {
+            a {
+                color: $color-white;
+            }
+            display: flex;
+            flex-direction: column;
+            .logo-link {
+                margin-bottom: 10px;
+                font-size: 26px;
+                line-height: calc(26 / 26 * 100%);
+                &:hover {
+                    opacity: .7;
+                }
+            }
+            .navbar {
+                .menu-items {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .menu-item {
+                        .menu-link {
+                            font-size: 11px;
+                            line-height: calc(26 / 11 * 100%);
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bg-img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+        .bg-footer-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+/* md-размер (>=768px) */
+@media (min-width: 768px) {
+    /* CSS для ширины от 768px до 991px */
+    .body-contact-and-footer {
+        .contact {
+            .crisper {
+                .input-group {
+                    #email-footer {
+                        padding-left: 35px;
+                        padding-right: 35px;
+                    }
+                    #btn-email-footer {
+                        padding-left: 44px;
+                        padding-right: 44px;
+                    }
+                }
+            }
+        }
+        .footer {
+            .crisper {
+                flex-direction: row;
+                justify-content: space-between;
+                .logo-link {
+                    margin-bottom: 0;
+                }
+                .navbar {
+                    .menu-items {
+                        width: 300px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+}
+/* lg-размер (>=992px) */
+@media (min-width: 992px) {
+    /* CSS для ширины от 992px до 1199px */
+    .body-contact-and-footer {
+        .contact {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .footer {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

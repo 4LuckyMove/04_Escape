@@ -1,0 +1,89 @@
+<!-- Section Modals -->
+<section class="modals">
+    <div class="crisper">
+        <!-- Modal 1 -->
+        <div class="modal modal-1" data-modal="signup">
+            <div class="modal-title">
+                <p class="modal__title">Sign Up</p>
+                <!--   Svg иконка для закрытия окна  -->
+                <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+                </svg>
+            </div>
+            <p class="sub-title">Please fill in this form to create an account.</p>
+            <div class="modal-body">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <label class="check-remember">
+                    <input type="checkbox" checked="checked" name="remember">
+                    Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <div class="clearfix">
+                <button type="button" class="loginbtn js-open-modal" data-modal="login">Log In</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal modal-2" data-modal="contact">
+            <div class="modal-title">
+                <p class="modal__title">Contact</p>
+                <!--   Svg иконка для закрытия окна  -->
+                <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+                </svg>
+            </div>
+            <div class="modal-body">
+                <form action=".">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <!-- Modal 3 -->
+        <div class="modal modal-1" data-modal="login">
+            <div class="modal-title">
+                <p class="modal__title">LogIn</p>
+                <!--   Svg иконка для закрытия окна  -->
+                <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+                </svg>
+            </div>
+            <div class="modal-body">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label class="check-remember">
+                    <input type="checkbox" checked="checked" name="remember">
+                    Remember me
+                </label>
+                <div class="clearfix clearfix-login">
+                    <button type="submit" class="signupbtn js-open-modal" data-modal="signup">Sign Up</button>
+                    <button type="submit" class="loginbtn">Log In</button>
+                </div>
+            </div>
+        </div>
+        <!-- Подложка под модальным окном -->
+        <div class="overlay js-overlay-modal"></div>
+    </div>
+</section>
