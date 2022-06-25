@@ -259,8 +259,12 @@ li {
   line-height: 117.6470588235%;
 }
 
-.body-header-and-home .home .crisper .body-link .btn-link {
+.body-header-and-home .home .crisper .body-link {
   margin: 0 auto;
+  max-width: 167px;
+}
+
+.body-header-and-home .home .crisper .body-link .btn-link {
   padding: 12px 31px;
   color: #FFF;
   background-color: #DD783F;

@@ -133,8 +133,9 @@
                 line-height: calc(20 / 17 * 100%);
             }
             .body-link {
+                margin: 0 auto;
+                max-width: 167px;
                 .btn-link {
-                    margin: 0 auto;
                     padding: 12px 31px;
                     color: $color-white;
                     background-color: #DD783F;
