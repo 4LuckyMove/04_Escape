@@ -132,18 +132,20 @@
                 font-size: 17px;
                 line-height: calc(20 / 17 * 100%);
             }
-            .btn-link {
-                margin: 0 auto;
-                padding: 12px 31px;
-                color: $color-white;
-                background-color: #DD783F;
-                border: 1px solid #DD783F;
-                border-radius: 3px;
-                font-size: 13px;
-                line-height: calc(20 / 13 * 100%);
-                display: block;
-                &:hover {
-                    transform: scale(.99);
+            .body-link {
+                .btn-link {
+                    margin: 0 auto;
+                    padding: 12px 31px;
+                    color: $color-white;
+                    background-color: #DD783F;
+                    border: 1px solid #DD783F;
+                    border-radius: 3px;
+                    font-size: 13px;
+                    line-height: calc(20 / 13 * 100%);
+                    display: block;
+                    &:hover {
+                        transform: scale(.99);
+                    }
                 }
             }
         }
